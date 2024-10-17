@@ -1,0 +1,109 @@
+import pyautogui
+import time
+
+pyautogui.alert('O código vai começar. Não use nada do seu computador enquanto ele estiver rodando.')
+pyautogui.PAUSE = 0.5
+
+# Abrir o Unico SCI no meu computador
+pyautogui.press('winleft')
+pyautogui.write('GO-GLOBAL')#o sistema via vpn
+pyautogui.press('enter')
+
+time.sleep(10)
+
+#Clicar no campo User name
+pyautogui.click(695,346) #Localização do mouse para clicar no login do vpn
+#Digitar o usuário
+pyautogui.write('login do windows')
+
+#Clicar no campo Password
+pyautogui.press('tab') 
+#Digitar a senha
+pyautogui.write('senha do windows')
+pyautogui.press('enter') 
+
+time.sleep(30)
+
+#Clicar no ícone da empresa de sistemas contábeis
+pyautogui.click(807,239)
+pyautogui.press('enter') 
+
+#Clicar no botão run
+pyautogui.click(762,387)
+pyautogui.press('enter') 
+
+time.sleep(20)
+
+#Clicar na caixa de login chamada 'Senha' da empresa de sistemas contábeis
+pyautogui.click(632,371)
+#Digitar o usuário
+pyautogui.write('Login do sistema')
+pyautogui.press('tab') 
+
+#Digitar a senha
+pyautogui.write('senha do sistema')
+pyautogui.press('enter') 
+
+time.sleep(10)
+
+#Clicar no menu relatórios #Localização do menu para imprimir relatório do módulo folha
+pyautogui.click(1115,31)
+
+time.sleep(5)
+
+pyautogui.mouseUp()
+#Clicar em 'Espelho e resumo da folha' #Nome da opção do relatório
+pyautogui.click(1301,58)
+
+time.sleep(5)
+#Clicar na lupa
+pyautogui.click(221,130)
+
+time.sleep(5)
+#Procurar o número da empresa
+pyautogui.click(211,325)
+
+time.sleep(5)
+#Digitar o numero da empresa no campo 'Empresa'
+pyautogui.write('nome da empresa')
+pyautogui.press('enter') 
+
+time.sleep(10)
+
+#Digitar a competência
+pyautogui.click(143,354)
+pyautogui.write('072024')
+
+time.sleep(15)
+
+#Pressionar as teclas alt+F8 para visualizar o arquivo
+pyautogui.hotkey('alt', 'f8')
+
+time.sleep(10)
+
+#Clicar na 'impressora' 
+pyautogui.click(604,125)
+
+time.sleep(20)
+
+#Clicar em 'ok' na tela de impressão
+pyautogui.click(832,523)
+
+time.sleep(20)
+
+#Clicar no campo de endereço da pasta
+pyautogui.click(352,58)
+
+#Clicar na barra de tarefas,digitar o endereço da pasta
+pyautogui.write("local onde deseja salvar")
+
+time.sleep(10)
+
+#Clicar 'salvar'
+pyautogui.click(511,612)
+
+#time.sleep(10)
+
+pyautogui.alert('O código já terminou de rodar, pode usar o seu computador')
+
+
