@@ -1,10 +1,11 @@
+#Automatização com acesso VPN ao sistema contábil
 import pyautogui
 import time
 
 pyautogui.alert('O código vai começar. Não use nada do seu computador enquanto ele estiver rodando.')
 pyautogui.PAUSE = 0.5
 
-# Abrir o Unico SCI no meu computador
+# Abrir o sistema contábil no meu computador
 pyautogui.press('winleft')
 pyautogui.write('GO-GLOBAL')#o sistema via vpn
 pyautogui.press('enter')
@@ -24,7 +25,7 @@ pyautogui.press('enter')
 
 time.sleep(30)
 
-#Clicar no ícone da empresa de sistemas contábeis
+#Clicar no ícone da empresa de sistema contábil
 pyautogui.click(807,239)
 pyautogui.press('enter') 
 
@@ -34,7 +35,7 @@ pyautogui.press('enter')
 
 time.sleep(20)
 
-#Clicar na caixa de login chamada 'Senha' da empresa de sistemas contábeis
+#Clicar na caixa de login chamada 'Senha' da empresa de sistema contábil
 pyautogui.click(632,371)
 #Digitar o usuário
 pyautogui.write('Login do sistema')
